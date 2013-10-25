@@ -812,6 +812,7 @@ static void DispatchOp(uv_async_t* handle, int status)
     tpl = FunctionTemplate::New(PollCompletion);
 //     argv[argc++] = Number::New((unsigned*)f4js_cmd.u.poll.reventsp);
     passHandle = true;
+    break;
 
   case OP_TRUNCATE:
     argv[argc++] = Number::New((double)f4js_cmd.u.rw.offset);
